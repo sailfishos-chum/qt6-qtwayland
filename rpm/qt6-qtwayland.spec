@@ -16,7 +16,7 @@ Source0: %{name}-%{version}.tar.bz2
 BuildRequires: clang
 BuildRequires: cmake
 BuildRequires: ninja
-BuildRequires: qt6-qtbase-devel >= %{version}
+BuildRequires: qt6-qtbase-devel
 BuildRequires: qt6-qtbase-static
 BuildRequires: qt6-qtbase-private-devel
 %{?_qt6:Requires: %{_qt6}%{?_isa} = %{_qt6_version}}
@@ -29,13 +29,7 @@ BuildRequires: pkgconfig(wayland-client)
 BuildRequires: pkgconfig(wayland-cursor)
 BuildRequires: pkgconfig(wayland-egl)
 BuildRequires: pkgconfig(egl)
-BuildRequires: pkgconfig(gl)
-BuildRequires: pkgconfig(xcomposite)
-BuildRequires: pkgconfig(xrender)
 BuildRequires: pkgconfig(libudev)
-BuildRequires: pkgconfig(libinput)
-
-BuildRequires:  libXext-devel
 
 %description
 %{summary}.
@@ -47,15 +41,6 @@ Requires: qt6-qtbase-devel%{?_isa}
 Requires: qt6-qtdeclarative-devel%{?_isa}
 %description devel
 %{summary}.
-
-%if 0%{?examples}
-%package examples
-Summary: Programming examples for %{name}
-Requires: %{name}%{?_isa} = %{version}-%{release}
-# BuildRequires: qt6-qtwayland-devel >= %{version}
-%description examples
-%{summary}.
-%endif
 
 %prep
 %autosetup -n %{name}-%{version}/upstream -p1
