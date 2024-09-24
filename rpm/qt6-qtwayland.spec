@@ -1,3 +1,5 @@
+%global  qt_version 6.7.2
+
 Summary: Qt6 - Wayland platform support and QtCompositor module
 Name:    qt6-qtwayland
 Version: 6.7.2
@@ -5,8 +7,6 @@ Release: 0%{?dist}
 
 License: LGPL-3.0-only OR GPL-3.0-only WITH Qt-GPL-exception-1.0
 Url:     http://www.qt.io
-%global  majmin %(echo %{version} | cut -d. -f1-2)
-%global  qt_version %(echo %{version} | cut -d~ -f1)
 
 Source0: %{name}-%{version}.tar.bz2
 
@@ -16,7 +16,7 @@ Source0: %{name}-%{version}.tar.bz2
 BuildRequires: clang
 BuildRequires: cmake
 BuildRequires: ninja
-BuildRequires: qt6-qtbase-devel
+BuildRequires: qt6-qtbase-devel >= %{qt_version}
 BuildRequires: qt6-qtbase-static
 BuildRequires: qt6-qtbase-private-devel
 %{?_qt6:Requires: %{_qt6}%{?_isa} = %{_qt6_version}}
