@@ -1,4 +1,4 @@
-%global  qt_version 6.7.2
+%global  qt_version 6.8.3
 
 Summary: Qt6 - Wayland platform support and QtCompositor module
 Name:    qt6-qtwayland
@@ -76,7 +76,6 @@ popd
 %files
 %doc README
 %license LICENSES/*
-%{_qt6_archdatadir}/sbom/%{qt_module}-%{qt_version}.spdx
 %{_qt6_libdir}/libQt6WaylandCompositor.so.6*
 %{_qt6_libdir}/libQt6WaylandCompositor.so.6*
 %{_qt6_libdir}/libQt6WaylandCompositorIviapplication.so.6*
