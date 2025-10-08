@@ -77,7 +77,6 @@ popd
 %doc README
 %license LICENSES/*
 %{_qt6_libdir}/libQt6WaylandCompositor.so.6*
-%{_qt6_libdir}/libQt6WaylandCompositor.so.6*
 %{_qt6_libdir}/libQt6WaylandCompositorIviapplication.so.6*
 %{_qt6_libdir}/libQt6WaylandCompositorPresentationTime.so.6*
 %{_qt6_libdir}/libQt6WaylandCompositorWLShell.so.6*
@@ -109,33 +108,21 @@ popd
 %{_qt6_libdir}/cmake/Qt6WaylandCompositor/Qt6WaylandCompositorConfig*.cmake
 %{_qt6_archdatadir}/mkspecs/modules/*.pri
 %dir %{_qt6_libdir}/cmake/Qt6WaylandClient/
-%dir %{_qt6_libdir}/cmake/Qt6WaylandClientFeaturesPrivate/
 %dir %{_qt6_libdir}/cmake/Qt6WaylandCompositor/
 %dir %{_qt6_libdir}/cmake/Qt6WaylandCompositorIviapplication/
-%dir %{_qt6_libdir}/cmake/Qt6WaylandCompositorIviapplicationPrivate
 %dir %{_qt6_libdir}/cmake/Qt6WaylandCompositorPresentationTime/
-%dir %{_qt6_libdir}/cmake/Qt6WaylandCompositorPresentationTimePrivate
-%dir %{_qt6_libdir}/cmake/Qt6WaylandCompositorPrivate
 %dir %{_qt6_libdir}/cmake/Qt6WaylandCompositorWLShell/
-%dir %{_qt6_libdir}/cmake/Qt6WaylandCompositorWLShellPrivate
 %dir %{_qt6_libdir}/cmake/Qt6WaylandCompositorXdgShell/
-%dir %{_qt6_libdir}/cmake/Qt6WaylandCompositorXdgShellPrivate
 %dir %{_qt6_libdir}/cmake/Qt6WaylandEglCompositorHwIntegrationPrivate/
 %{_qt6_libdir}/cmake/Qt6/*.cmake
 %{_qt6_libdir}/cmake/Qt6BuildInternals/StandaloneTests/QtWaylandTestsConfig.cmake
 %{_qt6_libdir}/cmake/Qt6Qml/QmlPlugins/*.cmake
 %{_qt6_libdir}/cmake/Qt6WaylandClient/*.cmake
-%{_qt6_libdir}/cmake/Qt6WaylandClientFeaturesPrivate/*.cmake
 %{_qt6_libdir}/cmake/Qt6WaylandCompositor/
 %{_qt6_libdir}/cmake/Qt6WaylandCompositorIviapplication/
-%{_qt6_libdir}/cmake/Qt6WaylandCompositorIviapplicationPrivate/*.cmake
 %{_qt6_libdir}/cmake/Qt6WaylandCompositorPresentationTime/
-%{_qt6_libdir}/cmake/Qt6WaylandCompositorPresentationTimePrivate/*.cmake
-%{_qt6_libdir}/cmake/Qt6WaylandCompositorPrivate/*.cmake
 %{_qt6_libdir}/cmake/Qt6WaylandCompositorWLShell/
-%{_qt6_libdir}/cmake/Qt6WaylandCompositorWLShellPrivate/*.cmake
 %{_qt6_libdir}/cmake/Qt6WaylandCompositorXdgShell/
-%{_qt6_libdir}/cmake/Qt6WaylandCompositorXdgShellPrivate/*.cmake
 %{_qt6_libdir}/cmake/Qt6WaylandEglCompositorHwIntegrationPrivate/
 %{_qt6_libdir}/qt6/metatypes/qt6*_metatypes.json
 %{_qt6_libdir}/qt6/modules/*.json
