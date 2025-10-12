@@ -1,0 +1,15 @@
+diff --git a/src/client/qwaylandcursor.cpp b/src/client/qwaylandcursor.cpp
+index 9ff762b7..2b297b7e 100644
+--- a/src/client/qwaylandcursor.cpp
++++ b/src/client/qwaylandcursor.cpp
+@@ -24,6 +24,10 @@ namespace QtWaylandClient {
+ 
+ std::unique_ptr<QWaylandCursorTheme> QWaylandCursorTheme::create(QWaylandShm *shm, int size, const QString &themeName)
+ {
++    if (!shm) {
++        return nullptr;
++    }
++
+     QByteArray nameBytes = themeName.toLocal8Bit();
+     struct ::wl_cursor_theme *theme = wl_cursor_theme_load(nameBytes.constData(), size, shm->object());
+ 
